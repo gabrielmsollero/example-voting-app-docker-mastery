@@ -36,5 +36,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          context: worker
+          context: ./worker
           tags: gabrielmsollero/example-voting-app:latest,gabrielmsollero/example-voting-app:01
