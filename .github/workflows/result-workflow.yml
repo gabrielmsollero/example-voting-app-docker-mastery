@@ -22,7 +22,7 @@ on:
 
 jobs:
   build-image:
-    name: Build Image
+    name: Build Result Image
     runs-on: ubuntu-latest
     steps:
             
@@ -36,5 +36,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          context: ./result
+          context: "{{defaultContext}}:result"
           tags: gabrielmsollero/example-voting-app:latest,gabrielmsollero/example-voting-app:01
