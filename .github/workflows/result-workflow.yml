@@ -37,4 +37,4 @@ jobs:
         with:
           push: ${{ github.event_name != 'pull_request' }}
           context: "{{defaultContext}}:result"
-          tags: gabrielmsollero/example-voting-app:latest,gabrielmsollero/example-voting-app:01
+          tags: gabrielmsollero/example-voting-app_result:latest
