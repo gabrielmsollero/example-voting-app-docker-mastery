@@ -57,9 +57,9 @@ jobs:
           platforms: linux/amd64
   
       # for simple tests (npm test, etc.) just run a local image in docker
-      - name: Unit Testing in Docker
-        run: |
-          docker run --rm ${{ github.run_id }} echo "testing 123"
+      # - name: Unit Testing in Docker
+      #   run: |
+      #     docker run --rm ${{ github.run_id }} echo "testing 123"
       
       - name: Docker Metadata for Final Image Build
         id: docker_meta
